@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="rootPane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.ProfileController">
+
+    <Label fx:id="headerLabel" layoutX="687.0" layoutY="27.0" style="-fx-font-size:24px; -fx-font-weight:bold;" text="Edit Profil" />
+
+    <Label fx:id="greetingLabel" layoutX="1081.0" layoutY="217.0" style="-fx-font-size:18px;" text="Halo, User!" />
+
+    <GridPane fx:id="formGrid" hgap="10" layoutX="507.0" layoutY="153.0" prefHeight="190.0" prefWidth="473.0" vgap="10">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <Label text="Email:" styleClass="content-text" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="emailField" styleClass="input-field" editable="false" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Nama:" styleClass="content-text" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="nameField" styleClass="input-field" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Umur:" styleClass="content-text" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="umurField" styleClass="input-field" prefWidth="100" promptText="Umur" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Tinggi (cm):" styleClass="content-text" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="heightField" styleClass="input-field" prefWidth="100" promptText="Tinggi" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="Berat (kg):" styleClass="content-text" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="weightField" styleClass="input-field" prefWidth="100" promptText="Berat" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+    <Button fx:id="saveButton" layoutX="700.0" layoutY="400.0" onAction="#handleSave" prefHeight="25.0" prefWidth="119.0" styleClass="primary-button" text="Simpan" />
+
+    <Button fx:id="backButton" layoutX="20" layoutY="20" onAction="#handleBack" prefWidth="120" styleClass="primary-button" text="Kembali" />
+   <TitledPane layoutX="16.0" layoutY="154.0" prefHeight="176.0" prefWidth="303.0" styleClass="subheader" text="Daftar Aktifitas">
+      <content>
+
+                <VBox prefHeight="174.0" prefWidth="202.0" spacing="10" styleClass="activity-panel">
+              <Separator prefWidth="400" />
+               <Label styleClass="subheader" text="⏰ Terakhir Login:" />
+               <Label fx:id="lblLastLogin" styleClass="value" text="—" wrapText="true" />
+               <Label prefHeight="18.0" prefWidth="200" styleClass="subheader" text="📝 Profil Terakhir Diubah:" />
+               <Label fx:id="lblLastUpdate" styleClass="value" text="—" />
+          </VBox>
+      </content>
+   </TitledPane>
+   <TextArea accessibleRole="TEXT_FIELD" editable="false" layoutX="994.0" layoutY="290.0" mouseTransparent="true" prefHeight="95.0" prefWidth="263.0" styleClass="tips-area" wrapText="true" />
+
+    <Label fx:id="lblTipOfDay" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="1011.0" layoutY="312.0" prefHeight="61.0" prefWidth="234.0" styleClass="subheader-light" wrapText="true" />
+   <Label layoutX="1003.0" layoutY="265.0" styleClass="header-shine" text="Tips Harian 💡" />
+   <ImageView fx:id="img" fitHeight="150.0" fitWidth="156.0" layoutX="1052.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../Profil.png" />
+      </image>
+   </ImageView>
+
+</Pane>

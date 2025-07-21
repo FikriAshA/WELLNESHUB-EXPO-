@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.Artikel1Controller">
+
+    <Label layoutX="633.0" layoutY="21.0" prefHeight="50" prefWidth="300" style="-fx-font-size: 18px; -fx-alignment: center;" styleClass="header-box" text="Artikel Hidup Sehat" />
+
+    <Pane fx:id="imageContainer" layoutX="50" layoutY="98.0" prefHeight="220.0" prefWidth="350" styleClass="header-box">
+      <children>
+         <ImageView fitHeight="187.0" fitWidth="301.0" layoutX="34.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="article-image">
+            <image>
+               <Image url="@../../../artikel1.jpg" />
+            </image>
+         </ImageView>
+      </children></Pane>
+
+    <Label layoutX="50" layoutY="320" prefHeight="40" prefWidth="350" style="-fx-font-size: 14px; -fx-alignment: center;" styleClass="sub-title" text="Apakah Depresi Bahaya?" />
+
+    <TextFlow fx:id="contentFlow" layoutX="450" layoutY="100" prefHeight="400" prefWidth="780" styleClass="content-flow">
+        <children>
+            <Text styleClass="content-text" text="Apa itu depresi? Depresi adalah salah satu jenis gangguan Kesehatan mental yang menimbulkan gejala perasaan sedih terus menerus, kehilangan minat, mudah Lelah, hingga mempunyai perasaan tidak berharga. Dampak depresi pada kehidupan sangat besar karena bisa menyebabkan penderitanya mengalami gangguan karier hingga risiko bunuh diri. Depresi merupakan salah satu gangguan kesehatan mental yang paling umum dan bisa memengaruhi siapa saja, tanpa memandang usia atau latar belakang. Lebih dari sekadar perasaan sedih, depresi adalah kondisi serius yang memengaruhi cara seseorang berpikir, merasakan, dan berfungsi dalam kehidupan sehari-hari. Depresi bisa dialami oleh siapa saja, tetapi genetika diduga berperan penting. Jika orang tua atau saudara Anda mengalami depresi, risiko Anda juga meningkat. Selain itu, wanita cenderung lebih rentan mengalami depresi dibandingkan pria.Teori menunjukkan bahwa perubahan pada struktur dan fungsi kimia otak dapat menyebabkan depresi. Sel-sel saraf yang mengatur suasana hati mungkin tidak bekerja dengan efisien selama depresi.Obat-obatan yang digunakan untuk mengobati depresi diyakini dapat meningkatkan komunikasi antar sel saraf sehingga fungsi otak kembali normal. Selain itu, penggunaan obat-obatan tertentu, alkohol, dan penyalahgunaan obat juga bisa memicu depresi." wrappingWidth="776.208984375" />
+        </children>
+    </TextFlow>
+   <Button fx:id="back" layoutX="25.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleBack" styleClass="primary-button" text="Kembali" />
+   <Button fx:id="back2" layoutX="110.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleHome" styleClass="primary-button" text="Home" />
+
+</AnchorPane>

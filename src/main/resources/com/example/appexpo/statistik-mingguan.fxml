@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.93" prefHeight="800.0" prefWidth="1280.0" styleClass="paneHitam" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.MingguanController">
+   <children>
+      <Label alignment="CENTER" layoutX="856.0" layoutY="59.0" prefHeight="65.0" prefWidth="327.0" styleClass="target-label" text="Target Minggu Ini" textFill="#1fa5b6">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="target" alignment="CENTER" layoutX="906.0" layoutY="124.0" prefHeight="65.0" prefWidth="225.0" textFill="#13848b">
+         <font>
+            <Font name="Bebas Neue Regular" size="50.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="863.0" layoutY="233.0" prefHeight="65.0" prefWidth="312.0" styleClass="target-label" text="Target Tercapai " textFill="#21a6b5">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetTercapai" alignment="CENTER" layoutX="916.0" layoutY="298.0" prefHeight="65.0" prefWidth="206.0" textFill="#13848b">
+         <font>
+            <Font name="Bebas Neue Regular" size="50.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="persentase" layoutX="772.0" layoutY="429.0" prefHeight="38.0" prefWidth="494.0" progress="0.0" styleClass="progress-bar-dark" />
+      <Label fx:id="persen" alignment="CENTER" layoutX="928.0" layoutY="482.0" prefHeight="65.0" prefWidth="182.0" textFill="#13848b">
+         <font>
+            <Font name="Bebas Neue Regular" size="50.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="diagramHarian" layoutX="42.0" layoutY="146.0" legendVisible="false" prefHeight="608.0" prefWidth="710.0" styleClass="chart">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelFill="#1fa5b6" tickLabelGap="12.0" fx:id="xAxis">
+               <tickLabelFont>
+                  <Font size="17.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelFill="#1fa5b6" tickLabelGap="14.0">
+               <tickLabelFont>
+                  <Font size="17.0" />
+               </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+         <styleClass>
+            <String fx:value="chart-horizontal-grid-lines" />
+            <String fx:value="chart-vertical-grid-lines" />
+         </styleClass>
+      </LineChart>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="276.0" layoutY="73.0" prefHeight="37.0" prefWidth="280.0" styleClass="header-label" text="Persentasi Selesai" textFill="#1fa5b6">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="pindahStage" layoutX="829.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="38.0" prefWidth="192.0" styleClass="btn-primary" text="Statistik Bulanan" textFill="#1fa5b6">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="pindahkeTambahTugas" layoutX="1079.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchSceneTugas" prefHeight="38.0" prefWidth="130.0" styleClass="primary-button" text="Home" textFill="#1fa5b6">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

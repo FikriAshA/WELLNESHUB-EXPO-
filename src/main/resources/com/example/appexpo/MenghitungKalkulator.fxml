@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.MenghitungKalkulator">
+
+    <VBox alignment="TOP_CENTER" spacing="20.0" styleClass="calc-container" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="64.0">
+
+        <Label styleClass="label-title" text="Hitung Kebutuhan Proteinmu!">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label styleClass="label-field" text="Masukkan Berat Badan (kg):">
+                <font><Font size="16.0" /></font>
+            </Label>
+            <TextField fx:id="beratBadanField" />
+        </HBox>
+
+        <Label styleClass="label-field" text="Tingkat Aktivitas:">
+            <font><Font size="16.0" /></font>
+        </Label>
+        <VBox alignment="CENTER_LEFT" spacing="8">
+            <RadioButton fx:id="ringanRadio" styleClass="radio-button" text="Ringan (jarang olahraga)">
+                <font><Font size="16.0" /></font>
+            </RadioButton>
+            <RadioButton fx:id="sedangRadio" styleClass="radio-button" text="Sedang (sering olahraga) seperti joging 1x seminggu">
+                <font><Font size="16.0" /></font>
+            </RadioButton>
+            <RadioButton fx:id="beratRadio" styleClass="radio-button" text="Berat, seperti lari jarak jauh, berenang, mendaki gunung">
+                <font><Font size="16.0" /></font>
+            </RadioButton>
+        </VBox>
+
+        <Button onAction="#hitungProtein" styleClass="button-calc" text="Hitung">
+            <font><Font size="16.0" /></font>
+        </Button>
+
+        <Label text="Hasil Perhitungan:">
+            <font><Font size="16.0" /></font>
+        </Label>
+        <TextArea fx:id="hasilArea" editable="false" mouseTransparent="true" prefRowCount="4" styleClass="content-flow" />
+
+    </VBox>
+   <Button layoutX="23.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleBack" styleClass="primary-button" text="Kembali" />
+
+</AnchorPane>

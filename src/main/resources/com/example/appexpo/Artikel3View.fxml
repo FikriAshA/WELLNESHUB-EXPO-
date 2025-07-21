@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.Artikel3Controller">
+
+    <Label layoutX="633.0" layoutY="21.0" prefHeight="50" prefWidth="300" style="-fx-font-size: 18px; -fx-alignment: center;" styleClass="header-box" text="Artikel Hidup Sehat" />
+
+    <Pane fx:id="imageContainer" layoutX="50" layoutY="98.0" prefHeight="220.0" prefWidth="350" styleClass="header-box">
+        <children>
+            <ImageView fitHeight="187.0" fitWidth="301.0" layoutX="34.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="article-image">
+                <image>
+                    <Image url="@../../../artikel3.jpg" />
+                </image>
+            </ImageView>
+        </children></Pane>
+
+    <Label layoutX="50" layoutY="320" prefHeight="40" prefWidth="350" style="-fx-font-size: 14px; -fx-alignment: center;" styleClass="sub-title" text="Dampak Buruk Depresi" />
+
+    <TextFlow fx:id="contentFlow" layoutX="450" layoutY="100" prefHeight="400" prefWidth="780" styleClass="content-flow">
+        <children>
+            <Text styleClass="content-text" text="Depresi dapat memengaruhi berbagai aspek kehidupan seseorang, mulai dari kondisi emosional hingga fungsi fisik. Secara emosional, individu yang mengalami depresi sering kali merasakan perasaan sedih yang mendalam, kehilangan minat atau kesenangan dalam aktivitas sehari-hari, serta munculnya rasa putus asa atau kehampaan. Gangguan ini juga bisa menurunkan kemampuan untuk merasakan kebahagiaan, sehingga hal-hal yang sebelumnya membawa kesenangan kini terasa hampa. Pada tingkat kognitif, depresi dapat menyebabkan kesulitan berkonsentrasi, lambat dalam mengambil keputusan, dan sering muncul pikiran negatif berulang yang semakin memperparah perasaan tidak berdaya.Dampak fisik depresi tidak kalah signifikan. Banyak pasien melaporkan gangguan pola tidur—baik insomnia maupun hipersomnia—yang kemudian memengaruhi energi dan daya tahan tubuh. Nafsu makan juga sering terganggu; sebagian orang kehilangan selera makan hingga turun berat badan drastis, sementara yang lain malah makan berlebihan sebagai bentuk pelampiasan emosi, sehingga berat badan naik. Rasa lelah berkepanjangan, nyeri otot, dan gangguan pencernaan sering muncul tanpa sebab medis yang jelas, karena kondisi tubuh ikut dipengaruhi oleh stres dan hormon yang tidak seimbang.Pada ranah sosial dan profesional, depresi kerap menimbulkan penurunan produktivitas dan isolasi. Seseorang mungkin menarik diri dari pergaulan, mengurangi interaksi dengan teman atau keluarga, dan sulit memenuhi tanggung jawab di tempat kerja atau sekolah. Hubungan interpersonal bisa renggang karena kurangnya komunikasi dan perasaan bersalah atau malu dari pihak yang mengalami depresi. Jika tidak ditangani, dampak ini dapat memicu konflik berkepanjangan, menurunnya kualitas hidup, bahkan risiko lebih tinggi untuk munculnya masalah kesehatan mental lain seperti gangguan kecemasan atau kecenderungan untuk menyakiti diri sendiri. Penanganan dini melalui dukungan sosial, terapi, dan, bila perlu, pengobatan dapat meminimalkan dampak-dampak tersebut dan membantu individu kembali berfungsi optimal." wrappingWidth="776.208984375" />
+        </children>
+    </TextFlow>
+    <Button fx:id="back" layoutX="25.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleBack" styleClass="primary-button" text="Kembali" />
+    <Button fx:id="back2" layoutX="110.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleHome" styleClass="primary-button" text="Home" />
+</AnchorPane>

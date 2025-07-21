@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.BMIController">
+
+   <Label layoutX="401.0" layoutY="40.0" styleClass="label-title" style="-fx-font-size:32px;" text="Hitung Body Mass Indexmu!" />
+
+   <Label layoutX="400" layoutY="180" styleClass="content-text" text="Berat Badan (kg):" />
+   <TextField fx:id="weightField" layoutX="600" layoutY="176" prefWidth="200" promptText="e.g. 65" styleClass="input-field" />
+
+   <Label layoutX="400" layoutY="260" styleClass="content-text" text="Tinggi Badan (cm):" />
+   <TextField fx:id="heightField" layoutX="600" layoutY="256" prefWidth="200" promptText="e.g. 170" styleClass="input-field" />
+
+   <Label layoutX="400" layoutY="340" styleClass="content-text" text="Jenis Kelamin:" />
+   <ComboBox fx:id="genderBox" layoutX="600" layoutY="336" prefWidth="200" promptText="Pilih" styleClass="combo-box" />
+
+   <Button layoutX="18.0" layoutY="27.0" onAction="#goBack" prefHeight="26.0" prefWidth="90.0" styleClass="primary-button" text="Kembali" />
+   <Button layoutX="400.0" layoutY="387.0" onAction="#calculateBMI" prefHeight="0.0" prefWidth="118.0" styleClass="button-calc" text="Hitung" />
+
+</AnchorPane>

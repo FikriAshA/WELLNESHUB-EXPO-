@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appexpo.Artikel2Controller">
+
+    <Label layoutX="633.0" layoutY="21.0" prefHeight="50" prefWidth="300" style="-fx-font-size: 18px; -fx-alignment: center;" styleClass="header-box" text="Artikel Hidup Sehat" />
+
+    <Pane fx:id="imageContainer" layoutX="50" layoutY="98.0" prefHeight="220.0" prefWidth="350" styleClass="header-box">
+        <children>
+            <ImageView fitHeight="187.0" fitWidth="301.0" layoutX="34.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" styleClass="article-image">
+                <image>
+                    <Image url="@../../../artikel2.jpg" />
+                </image>
+            </ImageView>
+        </children></Pane>
+
+    <Label layoutX="50" layoutY="320" prefHeight="40" prefWidth="350" style="-fx-font-size: 14px; -fx-alignment: center;" styleClass="sub-title" text="Gejala Depresi" />
+
+    <TextFlow fx:id="contentFlow" layoutX="450" layoutY="100" prefHeight="400" prefWidth="780" styleClass="content-flow">
+        <children>
+            <Text styleClass="content-text" text="Depresi sering kali tidak hanya sekadar perasaan sedih yang berlalu, melainkan kumpulan gejala yang memengaruhi hampir seluruh aspek kehidupan penderitanya. Pada tingkat emosional, seseorang dengan depresi mungkin mengalami perasaan sedih berkepanjangan, kehilangan minat atau kesenangan dalam aktivitas yang dulu menyenangkan, serta mudah merasa putus asa atau tidak berdaya. Rasa bersalah berlebihan, harga diri rendah, dan pikiran negatif yang berulang tentang diri sendiri juga kerap hadir, menyebabkan individu sulit melihat hal-hal positif di sekitarnya.Dari sisi kognitif, depresi dapat menurunkan kemampuan berpikir jernih dan berkonsentrasi. Penderitanya sering merasa pikirannya berjalan lambat, kesulitan membuat keputusan—even hal-hal sederhana—dan mudah lupa. Pola pikir yang penuh keraguan dan kegagapan keputusan ini dapat memperburuk rasa tidak berdaya, sehingga tugas sehari-hari terasa semakin berat untuk diselesaikan.Secara fisik, gejala depresi berkisar pada gangguan tidur dan nafsu makan. Beberapa orang menderita insomnia—sulit tidur atau sering terbangun—sementara yang lain mengalami hipersomnia, yaitu tidur berlebihan tanpa merasa segar saat bangun. Nafsu makan dapat menurun drastis hingga menyebabkan penurunan berat badan, atau sebaliknya, meningkat sebagai bentuk pelampiasan emosi yang membuat berat badan naik. Rasa lelah kronis tanpa sebab medis yang jelas, nyeri otot, gangguan pencernaan, dan sakit kepala juga umum dilaporkan, karena ketidakseimbangan hormon stres memengaruhi sistem tubuh.Dari sudut perilaku, penderita depresi cenderung menarik diri dari lingkungan sosial. Interaksi dengan teman, keluarga, atau rekan kerja berkurang; kegiatan sehari-hari seperti sekolah, pekerjaan, atau hobi sering terbengkalai. Isolasi ini dapat menimbulkan rasa kesepian dan memperkuat pikiran negatif, sehingga berpotensi memicu konflik dalam hubungan interpersonal. Pada kasus berat, muncul kecenderungan untuk menyakiti diri sendiri atau bahkan pikiran bunuh diri.Mengenali gejala-gejala depresi secara dini sangat penting agar penanganan—baik melalui dukungan keluarga dan teman, terapi psikologis, maupun pengobatan—dapat segera diberikan. Dengan pemahaman yang baik tentang gejala yang muncul, individu yang berjuang melawan depresi bisa mendapatkan bantuan yang tepat dan kembali menjalani kehidupan dengan lebih seimbang." wrappingWidth="776.208984375" />
+        </children>
+    </TextFlow>
+    <Button fx:id="back" layoutX="25.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleBack" styleClass="primary-button" text="Kembali" />
+    <Button fx:id="back2" layoutX="110.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleHome" styleClass="primary-button" text="Home" />
+</AnchorPane>
