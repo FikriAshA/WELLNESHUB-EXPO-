@@ -1,4 +1,4 @@
-﻿# WELLNESHUB-EXPO-
+﻿# WELLNESHUB EXPO INFORMATIKA UII 2025
 
 # Aplikasi Pola Hidup Sehat
 
